@@ -17,3 +17,16 @@ console.log('Before')
 doSomething()
 console.log('After')
 
+const anotherFunction = async () => {
+    try {
+        const something = await doSomethingAsync()
+        console.log(something)
+    }
+    catch (err) {
+        console.log(error)
+    }
+}
+
+console.log('Before 1')
+anotherFunction()
+console.log('After 1')
